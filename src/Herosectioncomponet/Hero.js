@@ -61,7 +61,7 @@ function Hero() {
          <div className='flex'>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/html.svg'></img>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/css.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/js.svg'></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/Js.svg'></img>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/react.svg'></img>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/tailwind.svg'></img>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/redx.svg'></img>
@@ -78,13 +78,11 @@ function Hero() {
         </div>
         <p className="font-black text-2xl md:text-5xl mt-1 mb-6">I{displayedText}</p>
   <p>
-   <button className="relative px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg overflow-hidden group h-12">
-      <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 transform group-hover:translate-y-full">
+   <button className="px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg   h-12">
+      <span className="flex items-center justify-center  ">
         Resume
       </span>
-      <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 transform translate-y-full group-hover:translate-y-0">
-        Download
-      </span>
+    
     </button>
 </p>
 
