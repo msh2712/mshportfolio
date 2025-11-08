@@ -81,7 +81,7 @@ function Sidebar() {
      {/* Overlay */}
 {isOpen && (
   <div
-    className="fixed top-0 left-[105px] right-0 bottom-0 bg-black bg-opacity-40 z-30"
+    className="fixed top-0 left-[105px] right-0  bottom-0 bg-black bg-opacity-50 z-30"
     onClick={toggleSidebar}
   ></div>
 )}
