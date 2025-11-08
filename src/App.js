@@ -6,6 +6,9 @@ import Hero from './Herosectioncomponet/Hero';
 import About from './Component/About';
 import Project from './Component/Project'
 import Skill from './Component/Skill';
+import Sidebar from './Component/Sidebar';
+import SocialIcons from './Component/SocialIcons';
+import Contact from './Component/Contact';
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
        <About/>
        <Skill/>
        <Project/>
+       <Contact/>
+       <SocialIcons/>
     </div>
   );
 }

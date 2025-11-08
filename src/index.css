@@ -92,6 +92,93 @@
   .msname{
     font-family: serif;
   }
+
+
+  .social {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.social .social-item {
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .social-item .social-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f5f5;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: all 0.4s ease;
+}
+
+.social .social-item .social-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  height: 100%;
+  width: 10px;
+  background: #706f6f;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social .social-item .social-link::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  height: 10px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.social .social-item .social-link:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(5px, -5px);
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  color: #101010;
+}
+
+/* Add color classes */
+.linkedin { color: #3b5999; }
+.linkedin:hover { background: #3b5999; }
+.linkedin:hover::before { background: #3b5999; }
+.linkedin:hover::after { background: #3b5999; }
+
+.google { color: #dd4b39; }
+.google:hover { background: #dd4b39; }
+.google:hover::before { background: #dd4b39; }
+.google:hover::after { background: #dd4b39; }
+
+.instagram { color: #e4405f; }
+.instagram:hover { background: #e4405f; }
+.instagram:hover::before { background: #e4405f; }
+.instagram:hover::after { background: #e4405f; }
+
+.github { color: #000; }
+.github:hover { background: #333; }
+.github:hover::before { background: #333; }
+.github:hover::after { background: #333; }
+
   
 
 

@@ -57,7 +57,7 @@ function Hero() {
       />
       <Navbar />
       <div className="h-full flex flex-col  md:px-0 md:ps-72 items-center md:items-start justify-center">
-        <p className=" font-name text-2xl md:text-3xl mb-2">MAHESH PAATIL</p> 
+        <p className=" font-name text-2xl md:text-2xl mb-1">MAHESH PAATIL</p> 
          <div className='flex'>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/html.svg'></img>
           <img className='w-9 md:w-12 my-3 me-2' src='./Svg/css.svg'></img>

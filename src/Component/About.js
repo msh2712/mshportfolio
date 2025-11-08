@@ -1,10 +1,10 @@
 
 function About() {
     return (
-        <div className='w-full bg-black pb-9 mt-10 md:mt-28 px-4 flex justify-center items-center flex-col'>
+        <div className='w-full bg-black pb-9  md:mt-28 px-4 flex justify-center items-center flex-col'>
  
-            <h1 className='text-center block md:hidden py-5 text-white'>
-                ABOUT<span>US</span>
+            <h1 className='text-center font-name text-[43px] font-semibold block md:hidden pb-10 text-white'>
+                ABOUT
             </h1>
 
             <div className='h-auto w-full px-2 md:px-10 flex flex-col md:flex-row home'>
@@ -35,13 +35,13 @@ function About() {
                             I enjoy turning ideas into interactive, high-performance user interfaces and constantly learning new technologies to stay ahead in the web development field.
                             <br />
                             Let’s connect and build something awesome together!
-                            LinkedIn
                             <a
                                 href='https://www.linkedin.com/in/mahesh-patil-ab1259233'
                                 className='text-blue-600 hover:text-blue-800 underline ml-1'
                             >
                                 LinkedIn
                             </a>.
+                            <br></br>
                             I am always excited to do business with like-minded people.
                             <br />
                             Let's have a discussion over ☕.
@@ -50,7 +50,7 @@ function About() {
                         <p
                             className='flex justify-center md:justify-start mt-3'
                         >
-                            <button className="px-10 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
+                            <button className="px-10 mt-4 md:mt-3 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
                                 <span className="flex items-center justify-center  ">
                                    Hire Me
                                 </span>
