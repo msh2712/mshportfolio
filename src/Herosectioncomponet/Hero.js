@@ -59,18 +59,18 @@ function Hero() {
       <div className="h-full flex flex-col  md:px-0 md:ps-72 items-center md:items-start justify-center">
         <p className=" font-name text-2xl md:text-2xl mb-1">MAHESH PAATIL</p> 
          <div className='flex'>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/html.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/css.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/Js.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/react.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/tailwind.svg'></img>
-          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/redx.svg'></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/html.svg' alt="Tailwind CSS logo"></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/css.svg' alt="Tailwind CSS logo"></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/Js.svg' alt="Tailwind CSS logo"></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/react.svg' alt="Tailwind CSS logo"></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/tailwind.svg' alt="Tailwind CSS logo"></img>
+          <img className='w-9 md:w-12 my-3 me-2' src='./Svg/redx.svg' alt="Tailwind CSS logo"></img>
        <div className='relative '>
   <img className='w-9 md:w-12 my-3 me-2' src='./Svg/Git.svg' />
   <img 
     className='absolute  bottom-32 md:bottom-16 -right-1 md:-right-16 rotate-[33deg] w-32 max-w-none'
     src='./Svg/Hover.gif' 
-    alt="hover"
+    alt="Hover effect animation"
   />
 </div>
 
