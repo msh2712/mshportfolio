@@ -66,7 +66,7 @@ function Sidebar() {
             className="text-white flex justify-center items-center text-xl hover:text-blue-400 transition-colors cursor-pointer bg-transparent border-none"
           >
             <Logo /> 
-            <span className="text-center pt-2 font-name text-2xl md:hidden">ahesh</span>
+            <span className="text-center pt-2 font-name text-lg md:hidden">ahesh</span>
           </button>
 
           <button
@@ -75,7 +75,7 @@ function Sidebar() {
              hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
             <FaUser /> 
-            <span className="ps-4 text-center font-name text-2xl md:hidden">User</span>
+            <span className="ps-4 text-center font-name text-lg md:hidden">User</span>
           </button>
 
           <button
@@ -84,7 +84,7 @@ function Sidebar() {
              hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
             <SiHyperskill /> 
-            <span className="ps-4 text-center font-name text-2xl md:hidden">Skill</span>
+            <span className="ps-4 text-center font-name text-lg md:hidden">Skill</span>
           </button>
 
           <button
@@ -93,7 +93,7 @@ function Sidebar() {
              hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
             <GrProjects /> 
-            <span className="ps-4 text-center font-name text-2xl md:hidden">Project</span>
+            <span className="ps-4 text-center font-name text-lg md:hidden">Project</span>
           </button>
 
           <button
@@ -102,7 +102,7 @@ function Sidebar() {
              hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
             <FaEnvelope /> 
-            <span className="ps-4 text-center font-name text-2xl md:hidden">Contact</span>
+            <span className="ps-4 text-center font-name text-lg md:hidden">Contact</span>
           </button>
 
         </div>
