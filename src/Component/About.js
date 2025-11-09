@@ -1,7 +1,7 @@
 
 function About() {
     return (
-        <div className='w-full bg-black pb-9  md:mt-10 px-6 flex justify-center items-center flex-col'>
+        <div className='w-full bg-black pb-9 pt-3  md:pt-20 px-6 flex justify-center items-center flex-col'>
  
             <h1 className='text-center font-name text-[43px] font-semibold block md:hidden pb-10 text-white'>
                 ABOUT

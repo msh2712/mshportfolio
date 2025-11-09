@@ -1,40 +1,41 @@
-// Header.jsx
 import React, { useState, useEffect } from 'react';
-import { FaUser, FaCode, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import { FaUser, FaEnvelope } from 'react-icons/fa';
+import { SiHyperskill } from "react-icons/si";
+import { GrProjects } from "react-icons/gr";
 import Logo from '../Herosectioncomponet/Logo';
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(() => {
     const saved = localStorage.getItem('sidebarOpen');
-    return saved === 'true' ? true : false;
+    return saved === 'true';
   });
 
   useEffect(() => {
     localStorage.setItem('sidebarOpen', isOpen);
   }, [isOpen]);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   const toggleSidebar = () => setIsOpen((prev) => !prev);
 
-  useEffect(() => {
-  if (isOpen) {
-    // Lock scroll
-    document.body.style.overflow = 'hidden';
-  } else {
-    // Restore scroll
-    document.body.style.overflow = '';
-  }
-
-  // Cleanup when component unmounts
-  return () => {
-    document.body.style.overflow = '';
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // close sidebar after click
+    }
   };
-}, [isOpen]);
-
 
   return (
     <>
+      {/* Hamburger button */}
       <div
-        className="fixed top-10 right-10 z-50 p-1.5 rounded cursor-pointer"
+        className="fixed top-10 right-10 z-[60] p-1.5 rounded cursor-pointer"
         onClick={toggleSidebar}
       >
         <div className="flex flex-col gap-[3px] w-5">
@@ -53,39 +54,56 @@ function Sidebar() {
         </div>
       </div>
 
+      {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-[90px]  flex flex-col bg-black justify-between py-4 z-40 transition-transform duration-300
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}`} 
+        className={`fixed top-0 left-0 h-full px-6 flex flex-col bg-black justify-between py-4 z-50 transition-transform duration-300
+        ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div className="flex flex-col justify-between py-6 pb-72 md:pb-10  items-center flex-1">
-            <a href="#about" className="text-white text-xl hover:text-blue-400 transition-colors">
-            <Logo/>
+        <div className="flex flex-col justify-between  py-6 pb-72 md:pb-10 items-start flex-1">
+          <a onClick={() => handleScroll('hero')} className="text-white flex justify-center items-center text-xl  hover:text-blue-400 transition-colors cursor-pointer">
+            <Logo /> <span className=' text-center pt-2 font-name text-2xl md:hidden'>ahesh</span>
           </a>
-          <a href="#about" className="text-white text-2xl hover:text-blue-400 transition-colors">
-            <FaUser />
+          <a
+            onClick={() => handleScroll('about')}
+            className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+          >
+            <FaUser /> <span className='ps-4 text-center font-name text-2xl md:hidden'>User</span>
           </a>
-          <a href="#skills" className="text-white text-2xl hover:text-blue-400 transition-colors">
-            <FaCode />
+
+          <a
+            onClick={() => handleScroll('skills')}
+            className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+          >
+            <SiHyperskill /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Skill</span>
           </a>
-          <a href="#projects" className="text-white text-2xl hover:text-blue-400 transition-colors">
-            <FaProjectDiagram />
+
+          <a
+            onClick={() => handleScroll('projects')}
+            className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+          >
+            <GrProjects /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Project</span>
           </a>
-          <a href="#contact" className="text-white text-2xl hover:text-blue-400 transition-colors">
-            <FaEnvelope />
+
+          <a
+            onClick={() => handleScroll('contact')}
+            className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+          >
+            <FaEnvelope /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Contact</span>
           </a>
+
         </div>
       </div>
 
-      {/* Overlay */}
-     {/* Overlay */}
-{isOpen && (
-  <div
-    className="fixed top-0 left-[105px] right-0  bottom-0 bg-black bg-opacity-50 z-30"
-    onClick={toggleSidebar}
-  ></div>
-)}
-
-      
+      {isOpen && (
+        <div
+          className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-40"
+          onClick={toggleSidebar}
+        ></div>
+      )}
     </>
   );
 }
