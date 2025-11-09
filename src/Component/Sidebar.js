@@ -59,41 +59,51 @@ function Sidebar() {
         className={`fixed top-0 left-0 h-full px-6 flex flex-col bg-black justify-between py-4 z-50 transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <div className="flex flex-col justify-between  py-6 pb-72 md:pb-10 items-start flex-1">
-          <a onClick={() => handleScroll('hero')} className="text-white flex justify-center items-center text-xl  hover:text-blue-400 transition-colors cursor-pointer">
-            <Logo /> <span className=' text-center pt-2 font-name text-2xl md:hidden'>ahesh</span>
-          </a>
-          <a
+        <div className="flex flex-col justify-between py-6 pb-72 md:pb-10 items-start flex-1">
+
+          <button
+            onClick={() => handleScroll('hero')}
+            className="text-white flex justify-center items-center text-xl hover:text-blue-400 transition-colors cursor-pointer bg-transparent border-none"
+          >
+            <Logo /> 
+            <span className="text-center pt-2 font-name text-2xl md:hidden">ahesh</span>
+          </button>
+
+          <button
             onClick={() => handleScroll('about')}
             className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
-             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
-            <FaUser /> <span className='ps-4 text-center font-name text-2xl md:hidden'>User</span>
-          </a>
+            <FaUser /> 
+            <span className="ps-4 text-center font-name text-2xl md:hidden">User</span>
+          </button>
 
-          <a
+          <button
             onClick={() => handleScroll('skills')}
             className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
-             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
-            <SiHyperskill /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Skill</span>
-          </a>
+            <SiHyperskill /> 
+            <span className="ps-4 text-center font-name text-2xl md:hidden">Skill</span>
+          </button>
 
-          <a
+          <button
             onClick={() => handleScroll('projects')}
             className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
-             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
-            <GrProjects /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Project</span>
-          </a>
+            <GrProjects /> 
+            <span className="ps-4 text-center font-name text-2xl md:hidden">Project</span>
+          </button>
 
-          <a
+          <button
             onClick={() => handleScroll('contact')}
             className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
-             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]"
+             hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >
-            <FaEnvelope /> <span className='ps-4 text-center font-name text-2xl md:hidden'>Contact</span>
-          </a>
+            <FaEnvelope /> 
+            <span className="ps-4 text-center font-name text-2xl md:hidden">Contact</span>
+          </button>
 
         </div>
       </div>
