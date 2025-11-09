@@ -57,7 +57,7 @@ function Sidebar() {
         className={`fixed top-0 left-0 h-full w-[90px]  flex flex-col bg-black justify-between py-4 z-40 transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}`} 
       >
-        <div className="flex flex-col justify-between py-6 pb-96 md:pb-10  items-center flex-1">
+        <div className="flex flex-col justify-between py-6 pb-72 md:pb-10  items-center flex-1">
             <a href="#about" className="text-white text-xl hover:text-blue-400 transition-colors">
             <Logo/>
           </a>

@@ -12,7 +12,8 @@ module.exports = {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
         name: ['Unbounded', 'sans-serif'],
         about: ['"Quicksand", sans-serif'],
-        project : ['"Josefin Sans", sans-serif']
+        project : ['"Josefin Sans", sans-serif'],
+        msh : ['"Sirin Stencil", sans-serif'],
       },
 
       keyframes: {

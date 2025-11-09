@@ -26,7 +26,7 @@ const CardGrid = () => {
       titles: "Live Weather  ",
       logo: "https://via.placeholder.com/150x150.png?text=ST",
       website: "#",
-      techStack: ["./Svg/html.svg", "./Svg/css.svg", "./Svg/js.svg"],
+      techStack: ["./Svg/html.svg", "./Svg/css.svg", "./Svg/Js.svg"],
       project: "03",
     },
   ];

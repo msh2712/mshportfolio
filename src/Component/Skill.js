@@ -21,7 +21,7 @@ function Skill() {
   const rightSkills = skills.slice(Math.ceil(skills.length / 2));
 
   return (
-    <div className="w-full px-8 md:px-5 pt-10 md:pt-20 mt-8 md:mt-7 bg-black">
+    <div className="w-full px-8 md:px-5 pt-11 md:pt-20 mt-8 md:mt-7 bg-black">
       <h2 className="relative text-4xl md:text-5xl flex font-semibold font-name text-start ps-5 md:ps-36 mb-14 md:mb-20 text-white">
         Skills
         <div className="absolute -top-2 left-[135px] md:left-[300px]">

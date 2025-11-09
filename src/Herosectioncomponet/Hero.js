@@ -74,11 +74,10 @@ function Hero() {
       <Navbar />
 
       <div className="h-full flex flex-col md:px-0 md:ps-72 items-center md:items-start justify-center">
-        <p className="font-name mt-36 md:mt-0 text-2xl md:text-2xl mb-1">
+        <p className="font-name mt-36 md:mt-0 text-xl md:text-2xl mb-1">
           MAHESH PAATIL
         </p>
 
-        {/* ✅ Your Flex Div with Slider Added */}
         <div className="flex items-center">
           <div
             className="w-[260px] md:w-[380px] cursor-pointer"
@@ -129,7 +128,7 @@ function Hero() {
 
         {/* Resume Button */}
         <p>
-          <button className="px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
+          <button className="px-12 md:px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
             <span className="flex items-center justify-center">Resume</span>
           </button>
         </p>
