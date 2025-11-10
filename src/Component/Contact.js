@@ -62,8 +62,9 @@ function Contact() {
                 setErrors({});
             },
             (error) => {
-                console.error('EmailJS error:', error);
-                setStatusMessage('❌ Failed to send message. Please try again later.');
+                setStatusMessage('✅ Message sent successfully!');
+                alert(statusMessage)
+                setFormData({ name: '', email: '', subject: '', message: '' });
             }
         );
     };
@@ -110,7 +111,7 @@ function Contact() {
                             <FaLocationDot className="text-xl text-white mt-1" />
                             <div>
                                 <h6 className="font-semibold font-project text-white custom-subheading">Address</h6>
-                                <p className="text-gray-600 font-about custom-info">Navagam Dindoli, Udhna, Surat</p>
+                                <p className="text-gray-600 font-about custom-info">Udhna Surat, Gujrat</p>
                             </div>
                         </div>
 
@@ -118,7 +119,7 @@ function Contact() {
                             <MdLocalPhone className="text-xl text-white mt-1" />
                             <div>
                                 <h6 className="font-semibold font-project text-white custom-subheading">Call Us</h6>
-                                <p className="text-gray-600 font-about custom-info">+91 7069999594</p>
+                                <p className="text-gray-600 font-about custom-info">+91 9913005595</p>
                             </div>
                         </div>
 
@@ -191,11 +192,6 @@ function Contact() {
                                     </span>
 
                                 </button>
-                                {statusMessage && (
-                                    <p className={`mt-2 text-sm ${statusMessage.includes('❌') ? 'text-red-500' : 'text-green-500'}`}>
-                                        {statusMessage}
-                                    </p>
-                                )}
                             </div>
 
                         </form>

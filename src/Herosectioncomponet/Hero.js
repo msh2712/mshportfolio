@@ -60,6 +60,7 @@ function Hero() {
       className="relative bg-black text-white"
       style={{ height: "100dvh" }}
     >
+      {/* Animated Background */}
       <Annimatedbg
         particleColors={["#ffffff", "#00ffff"]}
         particleCount={400}
@@ -71,14 +72,18 @@ function Hero() {
         disableRotation={false}
         className="absolute top-0 left-0 w-full h-full z-0"
       />
+
+      {/* Navbar */}
       <Navbar />
 
-      <div className="h-full flex flex-col md:px-0 md:ps-72 items-center md:items-start justify-center">
-        <p className="font-name mt-36 md:mt-0 text-xl md:text-2xl mb-1">
+      {/* Main Content */}
+      <div className="h-full flex flex-col md:px-0 md:ps-72 items-center md:items-start justify-center relative z-10">
+        <p className="font-name mt-36 adds md:mt-0 text-xl md:text-2xl mb-1">
           MAHESH PAATIL
         </p>
 
         <div className="flex items-center">
+          {/* Tech Swiper */}
           <div
             className="w-[260px] md:w-[380px] cursor-pointer"
             onMouseEnter={(e) =>
@@ -89,7 +94,7 @@ function Hero() {
             }
           >
             <Swiper
-              spaceBetween={3} 
+              spaceBetween={3}
               slidesPerView={5}
               loop={true}
               allowTouchMove={false}
@@ -113,22 +118,29 @@ function Hero() {
             </Swiper>
           </div>
 
+          {/* Hover GIF */}
           <div className="relative">
             <img
-              className="absolute bottom-28 md:bottom-12 right-0 md:-right-24 rotate-[33deg] w-32 max-w-none"
+              className="absolute bottom-28 md:bottom-12 right-0 md:-right-24 rotate-[33deg] w-32 max-w-none pointer-events-none"
               src="./Svg/Hover.gif"
               alt="Hover effect animation"
             />
           </div>
         </div>
 
+        {/* Typing Effect */}
         <p className="font-black text-2xl md:text-5xl mt-1 mb-6">
           I{displayedText}
         </p>
 
         {/* Resume Button */}
         <p>
-          <button className="px-12 md:px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
+          <button
+            onClick={() =>
+              window.open("/resume/Mahesh_Patil_Resume_(555).pdf", "_blank")
+            }
+            className="px-12 md:px-20 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12"
+          >
             <span className="flex items-center justify-center">Resume</span>
           </button>
         </p>

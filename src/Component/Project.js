@@ -6,26 +6,26 @@ const CardGrid = () => {
       id: 1,
       title: "Ecommerce Website",
       titles: "Ecommerce Website",
-      logo: "./Svg/16548.jpg",
+      logo: "./Project/Eco.jpg",
       website: "#",
       techStack: ["./Svg/html.svg", "./Svg/tailwind.svg", "./Svg/react.svg", "./Svg/redx.svg", "./Svg/Git.svg"],
       project: "01",
     },
     {
       id: 2,
-      title: "MaheshMovie webApk",
-      titles: "MaheshMovie",
-      logo: "./Svg/9568482.jpg",
+      title: "TeaserVault webApk",
+      titles: "TeaserVault",
+      logo: "./Project/movie.jpg",
       website: "#",
       techStack: ["./Svg/html.svg", "./Svg/tailwind.svg", "./Svg/react.svg", "./Svg/redx.svg", "./Svg/Git.svg"],
       project: "02",
     },
     {
       id: 3,
-      title: "Live Weather webapk",
-      titles: "Live Weather",
-      logo: "./Svg/2043631.jpg",
-      website: "#",
+      title: "Job Search webapk",
+      titles: "Jobhere",
+      logo: "./Project/job.jpg",
+      website: "https://taskof-job.vercel.app/",
       techStack: ["./Svg/html.svg", "./Svg/css.svg", "./Svg/Js.svg"],
       project: "03",
     },
@@ -70,15 +70,13 @@ const CardGrid = () => {
             key={card.id}
             className="relative py-5 mb-10 md:mb-12 bg-[#0F0F0F] text-white rounded-[50px] shadow-lg flex flex-col md:flex-row md:items-center md:justify-between transition-transform hover:scale-105 duration-300"
           >
-            {/* Project number background */}
             <div className="absolute animate-pulse -top-12 right-6 text-neutral-700 md:-top-20 md:right-6 text-[60px] md:text-[120px] opacity-5 font-bold">
               {card.project}
             </div>
 
-            {/* Poster / Logo Section */}
             <div className="w-full px-8 py-3 pt-5 md:py-10 md:ps-20 md:w-[400px] h-[300px] md:h-[420px] flex items-center justify-center rounded-t-[50px] md:rounded-l-[50px] md:rounded-tr-none overflow-hidden">
               <img
-                src={card.logo} // your poster/logo
+                src={card.logo} 
                 alt={card.title}
                 className="w-full drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] rounded-xl  h-full object-cover"
               />

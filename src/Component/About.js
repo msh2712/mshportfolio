@@ -1,8 +1,14 @@
 
 function About() {
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     return (
         <div className='w-full bg-black pb-9 pt-3  md:pt-20 px-6 flex justify-center items-center flex-col'>
- 
+
             <h1 className='text-center font-name text-[43px] font-semibold block md:hidden pb-10 text-white'>
                 ABOUT
             </h1>
@@ -50,9 +56,10 @@ function About() {
                         <p
                             className='flex justify-center md:justify-start mt-3'
                         >
-                            <button className="px-10 mt-4 md:mt-3 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
+                            <button onClick={() => handleScroll('contact')}
+                                className="px-10 mt-4 md:mt-3 py-2 font-name font-medium text-white border-2 border-gray-400 rounded-lg h-12">
                                 <span className="flex items-center justify-center  ">
-                                   Hire Me
+                                    Hire Me
                                 </span>
 
                             </button>

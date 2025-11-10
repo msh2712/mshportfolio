@@ -9,7 +9,7 @@ import Sidebar from './Component/Sidebar';
 
 function App() {
   return (
-    <div className="overflow-hidden bg-black relative">
+    <div className="overflow-hidden bg-black relative ">
       <Sidebar />
 
       <section id="hero">

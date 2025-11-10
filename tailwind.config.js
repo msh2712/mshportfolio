@@ -33,6 +33,7 @@ module.exports = {
         'rotate-left': 'rotate-left 20s linear infinite',
         'color-cycle': 'color-cycle 4s linear infinite',
       },
+      
     },
   },
   plugins: [],

@@ -21,21 +21,26 @@ function Sidebar() {
     };
   }, [isOpen]);
 
-  const toggleSidebar = () => setIsOpen((prev) => !prev);
+const toggleSidebar = () => {
+  setIsOpen((prev) => {
+    const newState = !prev;
+    localStorage.setItem('sidebarOpen', newState); 
+    return newState;
+  });
+};
 
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false); // close sidebar after click
+      setIsOpen(false); 
     }
   };
 
   return (
     <>
-      {/* Hamburger button */}
       <div
-        className="fixed top-10 right-10 z-[60] p-1.5 rounded cursor-pointer"
+        className="fixed top-10 right-10  hover:bg-black bg-black z-[60] p-1.5 rounded cursor-pointer"
         onClick={toggleSidebar}
       >
         <div className="flex flex-col gap-[3px] w-5">
@@ -54,7 +59,6 @@ function Sidebar() {
         </div>
       </div>
 
-      {/* Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full px-6 flex flex-col bg-black justify-between py-4 z-50 transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
@@ -80,6 +84,7 @@ function Sidebar() {
 
           <button
             onClick={() => handleScroll('skills')}
+            
             className="text-white text-2xl flex justify-center items-center cursor-pointer transform transition-all duration-300
              hover:text-lime-200 hover:scale-100 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] bg-transparent border-none"
           >

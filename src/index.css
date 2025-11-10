@@ -16,6 +16,9 @@
   transition: color 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .info{
     color: rgb(113, 114, 114);
@@ -221,3 +224,45 @@
     left: -3px;
   }
 }
+
+/* Webkit browsers: Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px; /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* dark track */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+
+}
+
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(249, 212, 5) #111827;
+}
+
+
+.adds {
+    animation: thumbColorAnim 9s linear infinite;
+}
+
+@keyframes thumbColorAnim {
+  0%   { color: #ffd4d4; } /* red-150 */
+  25%  { color: #cde4fe; } /* blue-150 */
+  50%  { color: #b9f0d0; } /* green-150 */
+  75%  { color: #fff5a0; } /* yellow-150 (custom) */
+  100% { color: #ffd4d4; } /* back to red-150 */
+}
+
+
+
+
+

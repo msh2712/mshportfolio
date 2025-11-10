@@ -15,10 +15,10 @@ export default function SocialIcons({ isOpen }) {
   }, [isOpen]);
 
   const socials = [
-    { icon: <FaLinkedin />, link: "https://linkedin.com", colorClass: "linkedin" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/maheshpaatil/", colorClass: "linkedin" },
     { icon: <FaGoogle />, link: "https://google.com", colorClass: "google" },
-    { icon: <FaInstagram />, link: "https://instagram.com", colorClass: "instagram" },
-    { icon: <FaGithub />, link: "https://github.com", colorClass: "github" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/mahesh_paatil__/", colorClass: "instagram" },
+    { icon: <FaGithub />, link: "https://github.com/Maheshpaatil555", colorClass: "github" },
   ];
 
   return (
