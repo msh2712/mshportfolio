@@ -9,7 +9,6 @@ const CardGrid = () => {
       logo: "./Project/Eco.jpg",
       website: "#",
       techStack: ["./Svg/html.svg", "./Svg/tailwind.svg", "./Svg/react.svg", "./Svg/redx.svg", "./Svg/Git.svg"],
-      project: "01",
     },
     {
       id: 2,
@@ -18,7 +17,6 @@ const CardGrid = () => {
       logo: "./Project/movie.jpg",
       website: "https://teaservault.vercel.app/",
       techStack: ["./Svg/html.svg", "./Svg/tailwind.svg", "./Svg/react.svg", "./Svg/redx.svg", "./Svg/Git.svg"],
-      project: "02",
     },
     {
       id: 3,
@@ -27,7 +25,6 @@ const CardGrid = () => {
       logo: "./Project/job.jpg",
       website: "https://taskof-job.vercel.app/",
       techStack: ["./Svg/html.svg", "./Svg/css.svg", "./Svg/Js.svg"],
-      project: "03",
     },
   ];
 
@@ -65,13 +62,13 @@ const CardGrid = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-16 w-full max-w-6xl">
-        {cards.map((card) => (
+        {cards.map((card , index) => (
           <div
             key={card.id}
             className="relative py-5 mb-10 md:mb-12 bg-[#0F0F0F] text-white rounded-[50px] shadow-lg flex flex-col md:flex-row md:items-center md:justify-between transition-transform hover:scale-105 duration-300"
           >
-            <div className="absolute animate-pulse -top-12 right-6 text-neutral-700 md:-top-20 md:right-6 text-[60px] md:text-[120px] opacity-5 font-bold">
-              {card.project}
+            <div className="absolute -top-12 right-6 text-neutral-700 md:-top-20 md:right-6 text-[60px] md:text-[120px]  font-bold">
+              0{index + 1}
             </div>
 
             <div className="w-full px-8 py-3 pt-5 md:py-10 md:ps-20 md:w-[400px] h-[300px] md:h-[420px] flex items-center justify-center rounded-t-[50px] md:rounded-l-[50px] md:rounded-tr-none overflow-hidden">
