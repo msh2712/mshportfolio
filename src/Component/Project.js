@@ -16,7 +16,7 @@ const CardGrid = () => {
       title: "TeaserVault webApk",
       titles: "TeaserVault",
       logo: "./Project/movie.jpg",
-      website: "#",
+      website: "https://teaservault.vercel.app/",
       techStack: ["./Svg/html.svg", "./Svg/tailwind.svg", "./Svg/react.svg", "./Svg/redx.svg", "./Svg/Git.svg"],
       project: "02",
     },
@@ -76,14 +76,14 @@ const CardGrid = () => {
 
             <div className="w-full px-8 py-3 pt-5 md:py-10 md:ps-20 md:w-[400px] h-[300px] md:h-[420px] flex items-center justify-center rounded-t-[50px] md:rounded-l-[50px] md:rounded-tr-none overflow-hidden">
               <img
-                src={card.logo} 
+                src={card.logo}
                 alt={card.title}
-                className="w-full drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] rounded-xl  h-full object-cover"
+                className="w-full drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] rounded-xl h-full object-cover"
               />
+
             </div>
 
 
-            {/* Card Content */}
             <div className="p-10 md:ps-5 pb-5 pt-3 md:pt-0 md:h-64 flex flex-col items-start justify-between">
               <h2 className="hidden md:block font-project font-bold text-2xl md:text-4xl mb-2">
                 {card.title}
@@ -92,7 +92,7 @@ const CardGrid = () => {
                 {card.titles}
               </h2>
 
-              <a
+              <a 
                 href={card.website}
                 className="text-white hover:text-blue-300 font-about py-1 md:py-0 uppercase tracking-widest text-xs underline underline-offset-8 cursor-pointer mb-4"
               >
@@ -116,7 +116,6 @@ const CardGrid = () => {
               </div>
             </div>
 
-            {/* Floating PROJECT text */}
             <p className="absolute animate-color-cycle font-name right-24 -top-1 md:right-40 md:-top-6">
               PROJECT
             </p>

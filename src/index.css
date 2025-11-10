@@ -225,29 +225,6 @@ html {
   }
 }
 
-/* Webkit browsers: Chrome, Edge, Safari */
-::-webkit-scrollbar {
-  width: 12px; /* scrollbar width */
-}
-
-::-webkit-scrollbar-track {
-  background: #111827; /* dark track */
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 9999px;
-  border: 2px solid transparent;
-  background-clip: content-box;
-
-}
-
-
-
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgb(249, 212, 5) #111827;
-}
 
 
 .adds {

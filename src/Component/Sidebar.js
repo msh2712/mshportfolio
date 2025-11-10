@@ -32,7 +32,7 @@ const toggleSidebar = () => {
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView();
       setIsOpen(false); 
     }
   };
@@ -60,7 +60,7 @@ const toggleSidebar = () => {
       </div>
 
       <div
-        className={`fixed top-0 left-0 h-full px-6 flex flex-col bg-black justify-between py-4 z-50 transition-transform duration-300
+        className={`fixed top-0 left-0 h-full px-6 md:px-7 flex flex-col bg-black bg-opacity-85 justify-between py-4  z-50 transition-transform duration-300
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
         <div className="flex flex-col justify-between py-6 pb-72 md:pb-10 items-start flex-1">
@@ -70,7 +70,7 @@ const toggleSidebar = () => {
             className="text-white flex justify-center items-center text-xl hover:text-blue-400 transition-colors cursor-pointer bg-transparent border-none"
           >
             <Logo /> 
-            <span className="text-center pt-2 font-name text-lg md:hidden">ahesh</span>
+            <span className="text-center pt-2 adds font-name text-lg md:hidden">ahesh</span>
           </button>
 
           <button
@@ -115,7 +115,7 @@ const toggleSidebar = () => {
 
       {isOpen && (
         <div
-          className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-40"
+          className="fixed top-0 left-0 right-0 bottom-0  backdrop-blur-sm  bg-opacity-50 z-40"
           onClick={toggleSidebar}
         ></div>
       )}

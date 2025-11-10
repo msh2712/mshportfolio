@@ -33,7 +33,7 @@ function About() {
                         </h1>
 
                         <p className='info text-center font-about md:text-left mt-5 md:mt-0 text-base'>
-                            Hi 👋, I’m <span className="text-zinc-400">Mahesh Patil</span>, a React.js Developer from Surat, Gujarat.
+                            Hi👋, I’m <span className="text-zinc-400">Mahesh Patil</span>, a React.js Developer from Surat, Gujarat.
                             <br />
                             I have 1 Year of experience in frontend development and currently.
                             I specialize in building responsive, dynamic web applications using React.js, Redux, Tailwind CSS, and modern JavaScript (ES6+).
